@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro 4 | SkyLight Animation</title>
+	<link rel="stylesheet" type="text/css" href="assets/animate/animate.css" />
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<style type="text/css">
+
+		a:hover{color:#ecf0f1}
+		.alpha{
+	           width: 680px;
+	           height: 500px;
+	           padding :20px;
+	           background-color: #e74c3c;	                
+	    }
+	    h1{margin:0px!important; padding:160px;}
+		body{background-color: #fff}
+		.fa-play{    font-size: 120px!important; border: none!important;margin: 7% 0 0 0 }
+	</style>
+</head>
+<body>
+
+<div class="alpha">
+<h1 class=" wow fadeIn"  data-wow-duration="2s" data-wow-delay="0.5s">
+		<a href="">
+			<i class="fa fa-play"></i>
+		</a>
+</h1>
+</div>
+	<script src="assets/animate/wow.min.js"></script>
+<script src="assets/js/jquery-1.12.2.min.js"></script>
+<script>
+	// Tab
+    $(function() {
+	    $( "#tabs" ).tabs();
+	});
+
+	// animate
+	wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+      wow.init();
+      </script>
+</body>
+</html>

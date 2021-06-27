@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro | SkyLight Animation</title>
+	<link rel="stylesheet" type="text/css" href="assets/animate/animate.css" />
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+<style type="text/css">
+
+	.fa-play{
+    border-radius: 30%!important;height: 40px;width: 50px;border: solid 2px!important;padding: 5px;  background-color: #e74c3c; margin: 0 45% }
+
+	.fa-play:hover{
+		color:#e74c3c; background: #fff!important;
+	}
+
+    .alpha{width: 680px; height: 500px;  padding :20px;  background-color:#e67e22}     
+	h1{margin: 150px 0; line-height: 50px}     
+	h2{font-family: sans-serif; font-size: 32px!important;text-align: center}     
+	body{background-color: #fff} 
+
+</style> 
+</head> 
+<body> 
+	<div class="alpha">
+
+		<div class=" wow fadeInDown"  data-wow-duration="2s" data-wow-delay="0.5s">
+			<h1>today I would like to explain about <br>
+				<b><i style="color:#444;font-size: 37px">'.....'</i></b>
+				or <b><i style="color:#444;font-size: 37px">'.......'</i></b><br> With HTML & CSS.
+			</h1>
+		</div>
+		<div class=" wow fadeInUp"  data-wow-duration="1.5s" data-wow-delay="0.5s">
+			<a href="index4.html">
+				<h2 class="fa fa-play"></h2>
+			</a>
+		</div>
+	</div>
+
+
+
+	<script src="assets/animate/wow.min.js"></script>
+	<script src="assets/js/jquery-1.12.2.min.js"></script>
+	<script>
+		// Tab
+	    $(function() {
+		    $( "#tabs" ).tabs();
+		});
+
+		// animate
+		wow = new WOW(
+          	{
+	          boxClass:     'wow',      // default
+	          animateClass: 'animated', // default
+	          offset:       0,          // default
+	          mobile:       true,       // default
+	          live:         true        // default
+        	}
+        )
+      wow.init();
+    </script>
+</body>
+</html>

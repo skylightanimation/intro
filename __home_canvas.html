@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>8815</title>
+	<link rel="stylesheet" type="text/css" href="assets/animate/animate.css" />
+	<style type="text/css"> a img {opacity: 0}
+							a img:hover{opacity: 0.9; top: 246px;left: 407px; position: fixed;}
+							.alpha{
+								width: 720px;
+								height: 540px;
+								border: solid 1px #222;
+							}
+							.present{
+								 top: 246px;left: 407px; position: fixed;margin:0px
+							}
+		</style>
+ <script type="text/javascript">
+ 	                    //js game
+var p1, p2;
+var mv, temp = 0;
+var count = 0;
+var player;
+var player1, player2;
+
+var	timeOpen=0;
+var	truetime=0;
+
+	function s() {
+		gameReader();
+		//OpenTimer();
+
+	}
+
+//function OpenTimer(){
+	var	countOpTimer = 0;
+	var timeOpen=setInterval(timer, 1000);
+	function timer(){
+		timeOpen=timeOpen+1;
+		checkOpen();
+		document.getElementById("open").innerHTML=timeOpen + " secs";
+	}
+
+	function checkOpen(){
+	countOpTimer = countOpTimer + timeOpen;
+	if (timeOpen == 4) {
+		//mainTimer();
+		//TrueTimer();
+	}}
+//}
+
+
+function TrueTimer(){
+	var truetime=setInterval(timer, 1000);
+	function timer(){
+	truetime=truetime+1;
+	testmv();
+	document.getElementById("temp").innerHTML=truetime + " secs";
+	}
+}
+
+function mainTimer(){
+	var counter=setInterval(timer, 5);
+	function timer(){
+	count=count+1;
+	testmv();
+	document.getElementById("timer").innerHTML=count + " secs";
+	}
+}
+
+function testmv(){
+	mv = mv + count
+
+    if (mv != count) {
+	    temp = temp + 1;
+		player1.pos.index = temp;
+		player2.pos.index = temp;
+	} 
+}
+
+
+function gameReader(){
+
+	player1 = new playeR(p1, 0,  "#fff", new posPly(0));
+	player2 = new playeR(p2, 0,  "yellow", new posPly(0));
+
+    var background = new Image();
+
+        background.src="assets/ img/SkyLight_black_White.svg"; 
+                            
+    var canvas = document.getElementById('background');
+    var context = canvas.getContext("2d");
+	var titik3 =[ 
+
+	//under
+
+
+new logP (	562	,	421),
+new logP (	559	,	421),
+new logP (	556	,	421),
+new logP (	553	,	421),
+new logP (	550	,	421),
+new logP (	547	,	421),
+new logP (	544	,	421),
+new logP (	541	,	421),
+new logP (	538	,	421),
+new logP (	535	,	421),
+new logP (	532	,	421),
+new logP (	529	,	421),
+new logP (	526	,	421),
+new logP (	523	,	421),
+new logP (	520	,	421),
+new logP (	517	,	421),
+new logP (	514	,	421),
+new logP (	511	,	421),
+new logP (	508	,	421),
+new logP (	505	,	421),
+new logP (	502	,	421),
+new logP (	499	,	421),
+new logP (	496	,	421),
+new logP (	493	,	421),
+new logP (	490	,	421),
+new logP (	487	,	421),
+new logP (	484	,	421),
+new logP (	481	,	421),
+new logP (	478	,	421),
+new logP (	475	,	421),
+new logP (	472	,	421),
+new logP (	469	,	421),
+new logP (	466	,	421),
+new logP (	463	,	421),
+new logP (	460	,	421),
+new logP (	457	,	421),
+new logP (	454	,	421),
+new logP (	451	,	421),
+new logP (	448	,	421),
+new logP (	445	,	421),
+new logP (	442	,	421),
+new logP (	439	,	421),
+new logP (	436	,	421),
+new logP (	433	,	421),
+new logP (	430	,	421),
+new logP (	427	,	421),
+new logP (	424	,	421),
+new logP (	421	,	421),
+new logP (	418	,	421),
+new logP (	415	,	421),
+new logP (	412	,	421),
+new logP (	409	,	421),
+new logP (	406	,	421),
+new logP (	403	,	421),
+new logP (	400	,	421),
+new logP (	397	,	421),
+new logP (	394	,	421),
+new logP (	391	,	421),
+new logP (	388	,	421),
+new logP (	385	,	421),
+new logP (	382	,	421),
+new logP (	379	,	421),
+new logP (	376	,	421),
+new logP (	373	,	421),
+new logP (	370	,	421),
+new logP (	367	,	421),
+new logP (	364	,	421),
+new logP (	361	,	421),
+new logP (	358	,	421),
+new logP (	355	,	421),
+new logP (	352	,	421),
+new logP (	349	,	421),
+new logP (	346	,	421),
+new logP (	343	,	421),
+new logP (	340	,	421),
+new logP (	337	,	421),
+new logP (	334	,	421),
+new logP (	331	,	421),
+new logP (	328	,	421),
+new logP (	325	,	421),
+new logP (	322	,	421),
+new logP (	319	,	421),
+new logP (	316	,	421),
+new logP (	313	,	421),
+new logP (	310	,	421),
+new logP (	308	,	421),
+new logP (	306	,	424),
+new logP (	303	,	427),
+new logP (	300	,	430),
+new logP (	297	,	433),
+new logP (	294	,	436),
+new logP (	291	,	439),
+new logP (	288	,	442),
+new logP (	285	,	445),
+new logP (	282	,	448),
+new logP (	279	,	451),
+new logP (	276	,	453),
+new logP (	273	,	453),
+new logP (	270	,	453),
+new logP (	267	,	453),
+new logP (	264	,	453),
+new logP (	261	,	453),
+new logP (	258	,	453),
+new logP (	255	,	453),
+new logP (	252	,	453),
+new logP (	249	,	453),
+new logP (	246	,	453),
+new logP (	243	,	453),
+new logP (	240	,	453),
+new logP (	237	,	453),
+new logP (	234	,	453),
+new logP (	231	,	453),
+new logP (	228	,	453),
+new logP (	225	,	453),
+new logP (	222	,	453),
+new logP (	219	,	453),
+new logP (	216	,	453),
+new logP (	213	,	453),
+new logP (	210	,	453),
+new logP (	207	,	453),
+new logP (	204	,	453),
+new logP (	201	,	453),
+new logP (	198	,	453),
+new logP (	195	,	453),
+new logP (	192	,	453),
+new logP (	189	,	453),
+new logP (	186	,	453),
+new logP (	183	,	453),
+
+
+
+
+
+
+
+
+
+
+//under
+
+];
+
+	var titik2 =[new logP (226,175),new logP (226,176),new logP (226,172),new logP (226,169),new logP (226,166),new logP (226,163),new logP (226,160),new logP (226,157),new logP (226,154),new logP (226,151),new logP (226,148),new logP (226,145),new logP (243,142),new logP (242,142),new logP (245,139),new logP (248,136),new logP (251,133),new logP (254,130),new logP (257,127),new logP (260,124),new logP (263,121),new logP (266,118),new logP (269,115),new logP (272,112),new logP (275,109),new logP (278,106),new logP (281,103),new logP (284,100),new logP (287,97),new logP (290,94),new logP (290,97),new logP (290,100),new logP (290,103),new logP (290,106),new logP (290,109),new logP (290,110),new logP (287,113),new logP (284,116),new logP (281,119),new logP (278,122),new logP (288,193),new logP (288,190),new logP (288,187),new logP (288,184),new logP (288,181),new logP (288,178),new logP (288,175),new logP (288,172),new logP (288,169),new logP (288,168),new logP (285,171),new logP (282,174),new logP (279,177),new logP (280,177),new logP (278,180),new logP (278,183),new logP (278,186),new logP (278,189),new logP (278,192),new logP (278,195),new logP (278,198),new logP (278,201),new logP (278,204),new logP (278,207),new logP (278,210),new logP (278,213),new logP (275,216),new logP (278,213),new logP (275,216),new logP (272,219),new logP (269,222),new logP (266,225),new logP (263,228),new logP (260,231),new logP (257,234),new logP (254,237),new logP (251,240),new logP (248,243),new logP (245,246),new logP (242,249),new logP (239,252),new logP (236,255),new logP (236,252),new logP (236,249),new logP (236,252),new logP (236,249),new logP (236,246),new logP (236,243),new logP (236,240),new logP (236,237),new logP (311,110),new logP (311,113),new logP (311,116),new logP (311,119),new logP (311,122),new logP (311,125),new logP (311,128),new logP (311,131),new logP (311,134),new logP (311,137),new logP (311,153),new logP (311,156),new logP (311,159),new logP (311,162),new logP (311,165),new logP (311,168),new logP (311,171),new logP (311,174),new logP (311,177),new logP (311,180),new logP (311,183),new logP (311,186),new logP (311,189),new logP (311,192),new logP (311,195),new logP (311,198),new logP (311,201),new logP (311,204),new logP (311,207),new logP (311,210),new logP (311,213),new logP (330,145),new logP (333,148),new logP (336,151),new logP (339,154),new logP (342,151),new logP (345,148),new logP (342,151),new logP (345,148),new logP (348,145),new logP (351,142),new logP (354,139),new logP (357,136),new logP (360,133),new logP (363,130),new logP (366,127),new logP (369,124),new logP (372,121),new logP (375,118),new logP (378,115),new logP (381,112),new logP (394,113),new logP (397,116),new logP (400,119),new logP (403,122),new logP (406,125),new logP (409,128),new logP (412,131),new logP (415,134),new logP (418,137),new logP (421,140),new logP (440,118),new logP (440,121),new logP (440,124),new logP (440,127),new logP (440,130),new logP (440,133),new logP (440,136),new logP (440,139),new logP (440,142),new logP (440,145),new logP (440,148),new logP (440,151),new logP (440,154),new logP (440,157),new logP (440,160),new logP (440,163),new logP (440,166),new logP (440,169),new logP (440,172),new logP (440,175),new logP (440,178),new logP (440,181),new logP (440,184),new logP (440,187),new logP (440,190),new logP (440,193),new logP (440,196),new logP (226,255),new logP (223,258),new logP (220,261),new logP (217,264),new logP (214,267),new logP (211,270),new logP (211,273),new logP (211,276),new logP (211,273),new logP (211,276),new logP (211,279),new logP (211,282),new logP (211,285),new logP (211,288),new logP (211,291),new logP (211,294),new logP (211,297),new logP (211,300),new logP (211,303),new logP (211,306),new logP (211,309),new logP (211,312),new logP (211,315),new logP (211,318),new logP (211,321),new logP (211,324),new logP (211,327),new logP (211,330),new logP (211,333),new logP (211,336),new logP (211,339),new logP (211,342),new logP (211,345),new logP (211,348),new logP (211,351),new logP (211,354),new logP (211,357),new logP (211,360),new logP (211,363),new logP (211,366),new logP (208,369),new logP (205,372),new logP (202,375),new logP (199,378),new logP (196,381),new logP (193,384),new logP (190,387),new logP (187,390),new logP (184,393),new logP (181,396),
+new logP (	215	,	407),
+new logP (	218	,	407),
+new logP (	221	,	407),
+new logP (	224	,	407),
+new logP (	227	,	407),
+new logP (	230	,	407),
+new logP (	233	,	407),
+new logP (	236	,	407),
+new logP (	239	,	407),
+new logP (	242	,	407),
+new logP (	245	,	407),
+new logP (	248	,	407),
+new logP (	251	,	407),
+new logP (	254	,	407),
+new logP (	257	,	407),
+new logP (	260	,	407),
+new logP (	263	,	407),
+new logP (	266	,	407),
+new logP (	269	,	407),
+new logP (	272	,	407),
+new logP (	275	,	407),
+new logP (	278	,	407),
+new logP (	281	,	407),
+new logP (	284	,	407),
+new logP (	287	,	407),
+new logP (	290	,	407),
+new logP (	293	,	407),
+new logP (	296	,	407),
+new logP (	299	,	407),
+new logP (	302	,	407),
+new logP (	305	,	407),
+new logP (	308	,	407),
+
+
+new logP (	284	,	355),
+new logP (	284	,	352),
+new logP (	284	,	349),
+new logP (	284	,	346),
+new logP (	284	,	343),
+new logP (	284	,	340),
+new logP (	284	,	337),
+new logP (	284	,	334),
+new logP (	284	,	331),
+new logP (	284	,	328),
+new logP (	284	,	325),
+new logP (	284	,	322),
+new logP (	284	,	319),
+new logP (	284	,	316),
+new logP (	281	,	319),
+new logP (	278	,	322),
+new logP (	275	,	325),
+new logP (	272	,	328),
+new logP (	269	,	331),
+new logP (	266	,	334),
+new logP (	263	,	337),
+new logP (	260	,	340),
+new logP (	257	,	343),
+new logP (	254	,	346),
+new logP (	251	,	349),
+new logP (	248	,	352),
+new logP (	245	,	355),
+new logP (	242	,	358),
+new logP (	239	,	361),
+new logP (	236	,	364),
+new logP (	233	,	367),
+new logP (	230	,	370),
+new logP (	227	,	373),
+new logP (	224	,	376),
+new logP (	221	,	379),
+new logP (	218	,	382),
+new logP (	215	,	385),
+new logP (	212	,	388),
+new logP (	209	,	391),
+new logP (	209	,	392),
+
+
+new logP (	212	,	392),
+new logP (	215	,	392),
+new logP (	218	,	392),
+new logP (	221	,	392),
+new logP (	224	,	392),
+new logP (	227	,	392),
+new logP (	230	,	392),
+new logP (	233	,	392),
+new logP (	236	,	392),
+new logP (	239	,	392),
+new logP (	242	,	392),
+new logP (	245	,	392),
+new logP (	248	,	392),
+new logP (	251	,	392),
+new logP (	254	,	392),
+new logP (	257	,	392),
+new logP (	260	,	392),
+new logP (	263	,	392),
+new logP (	266	,	392),
+new logP (	269	,	392),
+new logP (	272	,	392),
+new logP (	275	,	392),
+new logP (	278	,	392),
+new logP (	281	,	392),
+new logP (	284	,	392),
+new logP (	287	,	392),
+new logP (	290	,	392),
+new logP (	293	,	392),
+new logP (	296	,	392),
+new logP (	299	,	392),
+new logP (	302	,	392),
+new logP (	305	,	392),
+new logP (	308	,	392),
+new logP (	311	,	392),
+new logP (	314	,	392),
+new logP (	317	,	392),
+new logP (	320	,	392),
+new logP (	323	,	392),
+new logP (	326	,	392),
+new logP (	329	,	392),
+new logP (	332	,	392),
+new logP (	335	,	392),
+new logP (	338	,	392),
+new logP (	341	,	392),
+new logP (	344	,	392),
+
+
+new logP (	307		,	295),
+new logP (	307		,	298),
+new logP (	307		,	301),
+new logP (	307		,	304),
+new logP (	307		,	307),
+new logP (	307		,	310),
+new logP (	307		,	313),
+new logP (	307		,	316),
+new logP (	307		,	319),
+new logP (	307		,	322),
+new logP (	307		,	325),
+new logP (	307		,	328),
+new logP (	307		,	331),
+new logP (	307		,	334),
+new logP (	307		,	337),
+new logP (	307		,	340),
+new logP (	307		,	343),
+new logP (	307		,	346),
+new logP (	307		,	349),
+new logP (	307		,	352),
+new logP (	307		,	355),
+new logP (	307		,	358),
+new logP (	307		,	361),
+
+
+new logP (	361		,	391),
+new logP (	364		,	391),
+new logP (	367		,	391),
+new logP (	370		,	391),
+new logP (	373		,	391),
+new logP (	376		,	391),
+new logP (	379		,	391),
+new logP (	382		,	391),
+
+new logP (	382		,	390),
+new logP (	379		,	387),
+new logP (	376		,	384),
+new logP (	373		,	381),
+new logP (	370		,	378),
+new logP (	367		,	376),
+new logP (	367		,	376),
+new logP (	364		,	376),
+new logP (	361		,	376),
+new logP (	358		,	376),
+new logP (	355		,	376),
+new logP (	352		,	376),
+new logP (	349		,	376),
+new logP (	346		,	376),
+new logP (	343		,	376),
+new logP (	340		,	376),
+new logP (	337		,	376),
+new logP (	334		,	376),
+new logP (	331		,	376),
+new logP (	328		,	376),
+new logP (	325		,	376),
+new logP (	322		,	376),
+new logP (	319		,	376),	
+
+
+new logP (	351		,	349),
+new logP (	354		,	349),
+new logP (	357		,	349),
+new logP (	360		,	349),
+new logP (	362		,	349),
+new logP (	362		,	352),
+new logP (	362		,	355),
+new logP (	362		,	358),
+new logP (	362		,	361),
+new logP (	362		,	364),
+new logP (	362		,	367),
+new logP (	362		,	370),
+new logP (	362		,	373),
+new logP (	362		,	376),
+
+
+new logP (	361		,	329),
+new logP (	363		,	329),
+new logP (	365		,	329),
+new logP (	367		,	329),
+new logP (	369		,	329),
+new logP (	371		,	329),
+new logP (	373		,	329),
+new logP (	375		,	329),
+new logP (	377		,	329),
+new logP (	379		,	329),
+new logP (	381		,	329),
+new logP (	383		,	329),
+new logP (	385		,	329),
+new logP (	387		,	329),
+new logP (	389		,	329),
+new logP (	391		,	329),
+new logP (	393		,	329),
+new logP (	395		,	329),
+new logP (	397		,	329),
+new logP (	399		,	329),
+new logP (	401		,	329),
+new logP (	403		,	329),
+new logP (	405		,	329),
+new logP (	407		,	329),
+new logP (	409		,	329),
+new logP (	411		,	329),
+new logP (	413		,	329),
+new logP (	415		,	329),
+new logP (	417		,	329),
+new logP (	420		,	326),
+new logP (	423		,	323),
+
+
+new logP (	435		,	305),
+new logP (	438		,	305),
+new logP (	441		,	305),
+new logP (	444		,	305),
+new logP (	447		,	305),
+new logP (	450		,	305),
+new logP (	453		,	305),
+new logP (	456		,	305),
+new logP (	457		,	305),
+new logP (	457		,	308),
+new logP (	457		,	311),
+new logP (	457		,	314),
+new logP (	457		,	317),
+new logP (	457		,	320),
+new logP (	457		,	323),
+new logP (	457		,	326),
+new logP (	457		,	329),
+new logP (	457		,	332),
+new logP (	457		,	335),
+new logP (	457		,	338),
+new logP (	457		,	341),
+new logP (	457		,	344),
+new logP (	457		,	347),
+new logP (	457		,	350),
+new logP (	457		,	353),
+new logP (	457		,	356),
+new logP (	457		,	359),
+new logP (	457		,	362),
+new logP (	457		,	365),
+new logP (	457		,	368),
+new logP (	457		,	371),
+new logP (	457		,	374),
+new logP (	457		,	377),
+
+
+new logP (	504		,	292),
+new logP (	501		,	292),
+new logP (	498		,	292),
+new logP (	495		,	292),
+new logP (	492		,	292),
+new logP (	489		,	292),
+new logP (	486		,	292),
+new logP (	483		,	292),
+new logP (	480		,	292),
+new logP (	477		,	292),
+new logP (	474		,	292),
+new logP (	477		,	296),
+new logP (	480		,	299),
+new logP (	483		,	302),
+new logP (	486		,	304),
+new logP (	489		,	304),
+new logP (	492		,	304),
+new logP (	495		,	304),
+new logP (	498		,	304),
+	];
+
+	var titik =[
+         new logP(273, 86), new logP(270, 89), 
+new logP(267, 92), new logP(264, 95),new logP(261, 98),new logP(258, 101),new logP(255, 104),new logP(252, 107),new logP(249, 110),new logP(246, 113),new logP(243, 116),new logP(240, 119),new logP(237, 122),new logP(234, 125),new logP(231, 128),new logP(228, 131),new logP(225, 134),new logP (226,133),new logP (223,136),new logP (222,139),new logP (223,140),new logP (226,143),new logP (229,146),new logP (232,149),new logP (235,152),new logP (237,155),new logP (237,156),new logP (237,159),new logP (237,162),new logP (237,165),new logP (237,168),new logP (237,171),new logP (237,174),new logP (237,177),new logP (237,180),new logP (237,183),new logP (237,186),new logP (237,189),new logP (237,192),new logP (237,195),new logP (237,198),new logP (237,201),new logP (237,204),new logP (240,201),new logP (243,198),new logP (246,195),new logP (249,192),new logP (252,189),new logP (255,186),new logP (258,183),new logP (261,180),new logP (263,178),new logP (265,176),new logP(268,173),new logP(271,170),new logP(274,167),new logP(277,164),new logP (280,161),new logP (283,158),new logP (286,155),new logP (289,152),new logP (292,149),new logP (293,148),new logP (296,213),new logP (293,216),new logP (290,219),new logP (287,222),new logP (284,225),new logP (281,228),new logP (278,231),new logP (275,234),new logP (272,237),new logP (269,240),new logP (266,243),new logP (263,246),new logP (260,249),new logP (257,252),new logP (254,255),new logP (251,258),new logP (248,261),new logP (245,264),new logP (242,267),new logP (239,270),new logP (236,273),new logP (303,129),new logP (306,132),new logP (309,135),new logP (312,138),new logP (315,141),new logP (318,144),new logP (321,147),new logP (321,144),new logP (321,141),new logP (321,138),new logP (321,135),new logP (321,132),new logP (321,129),new logP (321,126),new logP (321,123),new logP (321,120),new logP (321,117),new logP (321,114),new logP (321,111),new logP (321,108),new logP (321,105),new logP (321,102),new logP (321,99),new logP (320,202),new logP (320,199),new logP (320,196),new logP (320,193),new logP (320,190),new logP (320,187),new logP (320,184),new logP (320,181),new logP (320,178),new logP (320,175),new logP (320,172),new logP (320,169),new logP (320,166),new logP (323,166),new logP (326,166),new logP (323,166),new logP (326,166),new logP (329,166),new logP (332,166),new logP (335,169),new logP (338,172),new logP (341,175),new logP (344,178),new logP (347,181),new logP (350,184),new logP (353,187),new logP (356,190),new logP (359,193),new logP (362,196),new logP (365,199),new logP (368,202),new logP (371,205),new logP (374,205),new logP (377,205),new logP (380,205),new logP (383,205),new logP (386,205),new logP (389,205),
+new logP (378,193),new logP (375,190),new logP (372,187),new logP (369,184),new logP (366,181),new logP (363,178),new logP (360,175),new logP (357,172),new logP (354,169),new logP (351,166),new logP (348,163),new logP (345,160),new logP (342,157),
+new logP (396,101),new logP (399,104),new logP (402,107),new logP (405,110),new logP (408,113),new logP (411,116),new logP (414,119),new logP (417,122),new logP (420,125),new logP (423,128),new logP (426,131),new logP (429,134),new logP (429,137),new logP (429,140),new logP (429,143),new logP (429,146),new logP (429,149),new logP (429,152),new logP (429,155),new logP (429,158),new logP (429,161),new logP (429,164),new logP (429,167),new logP (429,170),new logP (429,173),new logP (429,176),new logP (429,179),new logP (429,182),new logP (429,185),new logP (429,188),new logP (429,191),new logP (429,194),new logP (429,197),new logP (429,200),new logP (429,203),new logP (429,206),new logP (429,207),new logP (426,204),new logP (423,201),new logP (420,198),new logP (420,195),new logP (420,192),new logP (420,195),new logP (420,192),new logP (420,189),new logP (420,186),new logP (420,183),
+new logP (470,88),new logP (467,91),new logP (464,94),new logP (461,97),new logP (458,100),new logP (455,103),new logP (452,106),new logP (449,109),new logP (449,112),new logP (449,115),new logP (449,118),new logP (449,121),new logP (449,124),new logP (452,121),new logP (455,118),new logP (458,115),new logP (461,112),new logP (464,109),new logP (467,106),new logP (470,103),new logP (473,100),new logP (476,97),new logP (479,94), new logP (	226	,	285),
+new logP (	226	,	288),
+new logP (	226	,	291),
+new logP (	226	,	294),
+new logP (	226	,	297),
+new logP (	226	,	300),
+new logP (	226	,	303),
+new logP (	226	,	306),
+new logP (	226	,	309),
+new logP (	226	,	312),
+new logP (	226	,	315),
+new logP (	226	,	318),
+new logP (	226	,	321),
+new logP (	226	,	324),
+new logP (	226	,	327),
+new logP (	226	,	330),
+new logP (	226	,	333),
+new logP (	226	,	336),
+new logP (	226	,	339),
+new logP (	226	,	342),
+new logP (	226	,	345),
+new logP (	226	,	348),
+new logP (	226	,	351),
+new logP (	226	,	354),
+new logP (	226	,	357),
+new logP (	226	,	360),
+new logP (	226	,	363),
+new logP (	229	,	366),
+new logP (	232	,	369),
+new logP (	233	,	370),
+new logP (	234	,	371),
+new logP (	235	,	372),
+new logP (	236	,	373),
+new logP (	237	,	374),
+new logP (	238	,	375),
+new logP (	239	,	376),
+new logP (	242	,	376),
+new logP (	245	,	376),
+
+new logP (	248	,	376),
+new logP (	251	,	376),
+new logP (	254	,	376),
+new logP (	257	,	376),
+new logP (	260	,	376),
+new logP (	263	,	376),
+new logP (	266	,	376),
+new logP (	269	,	376),
+new logP (	272	,	376),
+new logP (	275	,	376),
+new logP (	278	,	376),
+new logP (	281	,	376),
+new logP (	282	,	376),
+new logP (	283	,	376),
+
+new logP (	307		,	376),
+new logP (	304		,	376),
+new logP (	301		,	376),
+new logP (	298		,	376),
+new logP (	295		,	376),
+new logP (	295		,	373),
+new logP (	295		,	373),
+new logP (	295		,	370),
+new logP (	295		,	367),
+new logP (	295		,	364),
+new logP (	295		,	361),
+new logP (	295		,	358),
+new logP (	295		,	355),
+new logP (	295		,	352),
+new logP (	295		,	349),
+new logP (	295		,	346),
+new logP (	295		,	343),
+new logP (	295		,	340),
+new logP (	295		,	337),
+new logP (	295		,	334),
+new logP (	295		,	331),
+new logP (	295		,	328),
+new logP (	295		,	325),
+new logP (	295		,	322),
+new logP (	295		,	319),
+new logP (	295		,	316),
+new logP (	295		,	313),
+new logP (	295		,	310),
+new logP (	295		,	307),
+new logP (	295		,	304),
+
+
+new logP (	320		,	362),
+new logP (	320		,	359),
+new logP (	320		,	356),
+new logP (	320		,	353),
+new logP (	320		,	350),
+new logP (	320		,	347),
+new logP (	320		,	344),
+new logP (	320		,	341),
+new logP (	320		,	338),
+new logP (	320		,	335),
+new logP (	320		,	332),
+new logP (	320		,	329),
+new logP (	320		,	326),
+new logP (	320		,	323),
+new logP (	320		,	320),
+new logP (	320		,	317),
+new logP (	320		,	314),
+new logP (	320		,	311),
+new logP (	320		,	308),
+new logP (	320		,	305),
+new logP (	320		,	302),
+new logP (	320		,	299),
+new logP (	320		,	296),
+new logP (	320		,	293),
+
+new logP (	323		,	293),
+new logP (	326		,	293),
+new logP (	329		,	293),
+new logP (	332		,	293),
+new logP (	335		,	293),
+new logP (	338		,	293),
+new logP (	341		,	293),
+new logP (	344		,	293),
+new logP (	347		,	293),
+new logP (	350		,	293),
+new logP (	353		,	293),
+new logP (	356		,	293),
+new logP (	359		,	293),
+new logP (	362		,	293),
+
+new logP (	362		,	296),
+new logP (	362		,	299),
+new logP (	362		,	302),
+new logP (	362		,	305),
+new logP (	362		,	308),
+new logP (	362		,	311),
+
+new logP (	335		,	339),
+new logP (	338		,	339),
+new logP (	341		,	339),
+new logP (	344		,	339),
+new logP (	347		,	339),
+new logP (	350		,	339),
+new logP (	353		,	339),
+new logP (	356		,	339),
+new logP (	359		,	339),
+new logP (	362		,	339),
+new logP (	365		,	339),
+new logP (	368		,	339),
+new logP (	371		,	339),
+new logP (	374		,	339),
+new logP (	377		,	339),
+new logP (	380		,	339),
+new logP (	383		,	339),
+new logP (	386		,	339),
+new logP (	389		,	339),
+new logP (	392		,	339),
+new logP (	395		,	339),
+new logP (	398		,	339),
+
+new logP (	398		,	342),
+new logP (	398		,	345),
+new logP (	398		,	348),
+new logP (	398		,	351),
+new logP (	398		,	354),
+
+
+new logP (	422		,	376),
+new logP (	419		,	376),
+new logP (	416		,	376),
+new logP (	413		,	376),
+new logP (	410		,	376),
+new logP (	410		,	373),
+new logP (	410		,	370),
+new logP (	410		,	367),
+new logP (	410		,	364),
+new logP (	410		,	361),
+new logP (	410		,	358),
+new logP (	410		,	355),
+new logP (	410		,	352),
+new logP (	410		,	349),
+new logP (	410		,	346),
+new logP (	410		,	343),
+new logP (	410		,	340),
+new logP (	410		,	337),
+new logP (	410		,	334),
+new logP (	410		,	331),
+new logP (	410		,	328),
+new logP (	410		,	325),
+new logP (	410		,	322),
+new logP (	410		,	319),
+new logP (	410		,	316),
+new logP (	410		,	313),
+new logP (	410		,	310),
+new logP (	410		,	307),
+new logP (	410		,	304),
+new logP (	410		,	301),
+new logP (	410		,	298),
+new logP (	410		,	295),
+
+
+new logP (	434		,	292),
+new logP (	437		,	292),
+new logP (	440		,	292),
+new logP (	443		,	292),
+new logP (	446		,	292),
+new logP (	449		,	292),
+new logP (	452		,	292),
+new logP (	455		,	292),
+new logP (	458		,	292),
+new logP (	461		,	292),
+new logP (	464		,	292),
+new logP (	467		,	292),
+
+new logP (	470		,	292),
+new logP (	470		,	295),
+new logP (	470		,	298),
+new logP (	470		,	301),
+new logP (	470		,	304),
+new logP (	470		,	307),
+new logP (	470		,	310),
+new logP (	470		,	313),
+new logP (	470		,	316),
+new logP (	470		,	319),
+new logP (	470		,	322),
+new logP (	470		,	325),
+new logP (	470		,	328),
+new logP (	470		,	331),
+new logP (	470		,	334),
+new logP (	470		,	337),
+new logP (	470		,	340),
+new logP (	470		,	343),
+new logP (	470		,	346),
+new logP (	470		,	349),
+new logP (	470		,	352),
+new logP (	470		,	355),
+new logP (	470		,	358),
+new logP (	470		,	361),
+new logP (	470		,	364),
+new logP (	470		,	367),
+new logP (	470		,	370),
+new logP (	470		,	373),
+new logP (	470		,	376),
+new logP (	470		,	379),
+new logP (	470		,	380),
+
+new logP (	473		,	380),
+new logP (	476		,	380),
+new logP (	479		,	380),
+new logP (	482		,	380),
+new logP (	485		,	380),
+
+new logP (	487		,	383),
+new logP (	490		,	386),
+new logP (	493		,	389),
+new logP (	496		,	392),
+
+new logP (	493		,	392),
+new logP (	490		,	392),
+new logP (	487		,	392),
+new logP (	484		,	392),
+new logP (	481		,	392),
+new logP (	478		,	392),
+new logP (	475		,	392),
+new logP (	472		,	392),
+new logP (	469		,	392),
+new logP (	466		,	392),
+new logP (	463		,	392),
+new logP (	460		,	392),
+new logP (	457		,	392),
+new logP (	454		,	392),
+new logP (	451		,	392),
+new logP (	448		,	392),
+new logP (	445		,	392),
+new logP (	442		,	392),
+new logP (	439		,	392),
+new logP (	436		,	392),
+new logP (	433		,	392),
+new logP (	430		,	392),
+new logP (	427		,	392),
+new logP (	424		,	392),
+new logP (	421		,	392),
+new logP (	418		,	392),
+new logP (	415		,	392),
+new logP (	412		,	392),
+new logP (	409		,	392),
+new logP (	406		,	392),
+new logP (	403		,	392),
+new logP (	400		,	392),
+new logP (	397		,	392),
+new logP (	394		,	392),
+new logP (	391		,	392),
+new logP (	388		,	392),
+new logP (	385		,	392),
+new logP (	382		,	392),
+new logP (	379		,	392),
+new logP (	376		,	392),
+new logP (	373		,	392),
+new logP (	370		,	392),
+new logP (	367		,	392),
+new logP (	364		,	392),
+new logP (	361		,	392),
+	];
+
+                        window.requestAnimationFrame(draw);
+
+
+
+
+
+                        function draw() {
+
+
+							for (var i = 0; i < titik3.length; i++) {
+								context.fillStyle = "#F22613";
+								context.beginPath();
+								context.arc(titik3[i].x, titik3[i].y, 2, 0, 2*Math.PI);
+								context.fill();
+							}
+								context.fillStyle = player1.warna;
+								context.beginPath();								
+								context.arc(titik[player1.pos.index].x, titik[player1.pos.index].y, 4, 0, 2*Math.PI);
+								context.fill();
+
+								context.fillStyle = player2.warna;
+								context.beginPath();								
+								context.arc(titik2[player2.pos.index].x, titik2[player2.pos.index].y, 4, 0, 2*Math.PI);
+								context.fill();
+
+
+
+
+                            var tm = setTimeout(function() {
+                            context.drawImage(background, 0, 0, 720, 540);
+                            clearTimeout();
+                            }, 100);
+                        window.requestAnimationFrame(draw);
+                        }
+
+
+						function logP(x,y){
+							this.x = x;
+							this.y = y;
+						}
+						function posPly(index){
+							this.index = index;
+						}
+
+
+						function playeR(name, score,  warna, pos){
+							this.name = name;
+							this.score = score;
+							this.warna = warna;
+							this.pos = pos;
+						}
+
+
+
+    }
+                    //js game
+ </script>
+
+<style type='text/css'>
+
+   body {
+        
+    }
+
+
+</style>
+
+</head>
+
+
+<body class="alpha" onload="s()" style="cursor: url('img/crosspoint.png'), auto; cursor:pointer">
+
+					<canvas  class=" wow fadeIn"  data-wow-duration="2s" data-wow-delay="0s" id="background" width="720" height="540"></canvas>
+
+<div>
+
+                    <div class="col-md-4">
+                      Timer : <div id="timer">000 secs</div>
+                      true time : <div id="temp">000 secs</div>
+                      open : <div id="open">000 secs</div>
+                    </div>
+
+
+
+	<div class="present">
+		<a href="index.html">
+			<img src="assets/img/Present_button.png">
+		</a>
+	</div>
+</div>
+	<script src="assets/animate/wow.min.js"></script>
+<script src="assets/js/jquery-1.12.2.min.js"></script>
+<script>
+	// Tab
+    $(function() {
+	    $( "#tabs" ).tabs();
+	});
+
+	// animate
+	wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+      wow.init();
+      </script>
+</body>
+</html>
+

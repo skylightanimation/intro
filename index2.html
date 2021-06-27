@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro 2 | SkyLight Animation</title>
+	<link rel="stylesheet" type="text/css" href="assets/animate/animate.css" />
+<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+<style type="text/css">
+              .alpha{
+                width: 680px;
+                height: 500px;
+                padding :20px;
+                background-color: #3498db;
+                
+              }
+              h1{margin: 140px 0;}
+	body{background-color: #fff}
+
+	body{color:#ecf0f1;}
+	a:hover{color: #2980b9}
+</style>
+
+</head>
+<body>
+<div class="alpha">
+	<h2   class=" wow fadeInDown"  data-wow-duration="1.5s" data-wow-delay="0.5s">
+		<a href="index3.html">
+			<i class="fa fa-arrow-right" style="float:right;"></i>
+		</a>
+	</h2>
+	<h1 class=" wow fadeInLeft"  data-wow-duration="2s" data-wow-delay="0.5s">My name is <span style="color:#444; text-decoration: underline;">Ryunosuke Arima</span><br></h1>
+</div>
+
+		<script src="assets/animate/wow.min.js"></script>
+<script src="assets/js/jquery-1.12.2.min.js"></script>
+<script>
+	// Tab
+    $(function() {
+	    $( "#tabs" ).tabs();
+	});
+
+	// animate
+	wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+      wow.init();
+      </script>
+</body>
+</html>

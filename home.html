@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home | SkyLight Animation</title>
+	<link rel="stylesheet" type="text/css" href="assets/animate/animate.css" />
+	<style type="text/css"> a img {opacity: 0}
+							a img:hover{opacity: 0.9; top: 246px;left: 407px; position: fixed;}
+							.alpha{
+								width: 720px;
+								height: 540px;
+								border: solid 1px #222;
+							}
+							.present{
+								 top: 246px;left: 407px; position: fixed;margin:0px
+							}
+		</style>
+
+
+</head>
+<body class="alpha">
+
+<div class=" wow fadeInLeft"  data-wow-duration="2s" data-wow-delay="0s">
+	<img  src="assets/img/SkyLight_black_White.png" style="margin:  0" align="center" >
+	<div class="present">
+		<a href="index.html">
+			<img src="assets/img/Present_button.png">
+		</a>
+	</div>
+</div>
+	<script src="assets/animate/wow.min.js"></script>
+<script src="assets/js/jquery-1.12.2.min.js"></script>
+<script>
+	// Tab
+    $(function() {
+	    $( "#tabs" ).tabs();
+	});
+
+	// animate
+	wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+      wow.init();
+      </script>
+</body>
+</html>
